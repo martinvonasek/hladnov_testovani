@@ -27,10 +27,38 @@
         text-align: center;
       }
       /* ...existing code... */
+      /*opisování css stylu z AI návodu*/
+      .sloupce {
+        display: flex;
+        gap: 20px;
+        max-width: 900px;
+        margin-top: 40px;
+      }
+      .sloupec-levy, .sloupec-pravy {
+        flex: 1;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      .sloupec-levy h2, .sloupec-pravy h2 {
+        color: #333;
+        margin-top: 0;
+      }
   </style>
 </head>
 <body>
   <h1>Můj první web</h1>
   <p class="lead">Vítejte na mé první stránce. Tady může být krátký popis nebo uvítací text.</p>
+  <div class="sloupce">
+    <div class="sloupec-levy">
+      <h2>Levý sloupec</h2>
+      <p>Toto je obsah levého sloupce. Můžete sem přidat text, obrázky nebo cokoli jiného.</p>
+    </div>
+    <div class="sloupec-pravy">
+      <h2>Pravý sloupec</h2>
+      <p>Toto je obsah pravého sloupce. Můžete sem přidat text, obrázky nebo cokoli jiného.</p>
+    </div>
+  </div>
 </body>
 </html>
