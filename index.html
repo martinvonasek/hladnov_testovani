@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <title>Můj první web</title>
   <style>
-      body { font-family: sans-serif; display: grid; place-items: center; min-height: 100vh; background-color: #f4f4f4; }
-      h1 { color: #333; }
+      /* ...existing code... */
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       /* vodorovné centrování */
+        justify-content: flex-start; /* zarovnání od shora */
+        min-height: 100vh;
+        padding-top: 40px;         /* odsazení od horního okraje */
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        color: #333;
+        margin: 0;
+      }
+      p.lead {
+        color: #555;
+        margin-top: 12px;
+        max-width: 720px;
+        text-align: center;
+      }
+      /* ...existing code... */
   </style>
 </head>
 <body>
-  <h1>Ahoj světe! Toto je můj web na GitHub Pages.</h1>
+  <h1>Můj první web</h1>
+  <p class="lead">Vítejte na mé první stránce. Tady může být krátký popis nebo uvítací text.</p>
 </body>
 </html>
