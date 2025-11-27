@@ -1,0 +1,56 @@
+/* Nastavení pro celé tělo stránky (body) */
+body {
+  font-family: sans-serif;       /* Použij bezpatkové písmo (lépe se čte na monitoru) */
+  display: flex;                 /* Zapíná moderní "pružné" rozložení (Flexbox) */
+  flex-direction: column;        /* Prvky řadit pod sebe (nadpis, text, sloupce) */
+  align-items: center;           /* Zarovnat vše na střed (vodorovně) */
+  justify-content: flex-start;   /* Začít odshora */
+  min-height: 100vh;             /* Stránka bude vysoká minimálně jako celé okno prohlížeče */
+  padding-top: 40px;             /* Odskok obsahu od horní hrany okna */
+  margin: 0;                     /* Vynulování výchozích okrajů prohlížeče */
+  background-color: #f4f4f4;     /* Světle šedé pozadí celé stránky */
+}
+
+/* Styl pro hlavní nadpis h1 */
+h1 {
+  color: #333;                   /* Tmavě šedá barva (černá #000 je na oči příliš tvrdá) */
+  margin: 0;                     /* Zrušení vnějších okrajů nadpisu */
+}
+
+/* Styl pro odstavec, který má třídu "lead" (tečka znamená třída) */
+p.lead {
+  color: #555;                   /* O něco světlejší šedá než nadpis */
+  margin-top: 12px;              /* Mezera nad tímto odstavcem */
+  max-width: 720px;              /* Text nebude širší než 720px (aby se dobře četl) */
+  text-align: center;            /* Zarovnání textu na střed */
+}
+
+/* Kontejner pro sloupce */
+.sloupce {
+  display: flex;                 /* Zase Flexbox - tentokrát řadí prvky VEDLE SEBE */
+  gap: 20px;                     /* Mezera mezi levým a pravým sloupcem */
+  max-width: 900px;              /* Maximální šířka celé oblasti sloupců */
+  width: 100%;                   /* Aby to na mobilech nebylo moc úzké */
+  margin-top: 40px;              /* Odskok od úvodního textu */
+}
+
+/* Společný styl pro oba sloupce (čárka odděluje selektory) */
+.sloupec-levy, .sloupec-pravy {
+  flex: 1;                       /* Oba sloupce si vezmou spravedlivě půlku místa */
+  background: white;             /* Bílé pozadí "karet" */
+  padding: 20px;                 /* Vnitřní odsazení (aby text nebyl nalepený na kraj) */
+  border-radius: 8px;            /* Kulaté rohy */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Jemný stín pro 3D efekt */
+}
+
+/* Nadpisy uvnitř sloupců */
+.sloupec-levy h2, .sloupec-pravy h2 {
+  color: #333;
+  margin-top: 0;                 /* Zrušení mezery nad nadpisem, aby lícoval s okrajem */
+}
+
+/* Třída pro obrázek (přidal jsem ji do HTML místo inline stylu) */
+.responzivni-obrazek {
+  max-width: 100%;               /* Obrázek nikdy nepřeteče šířku sloupce */
+  height: auto;                  /* Výška se dopočítá poměrově (nedeformuje se) */
+}
