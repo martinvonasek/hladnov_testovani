@@ -13,7 +13,7 @@ body {
 
 /* Styl pro hlavní nadpis h1 */
 h1 {
-  color: red;                   /* Tmavě šedá barva (černá #000 je na oči příliš tvrdá) */
+  color: #red;                   /* Tmavě šedá barva (černá #000 je na oči příliš tvrdá) */ /*upravil jsem na #red*/
   margin: 0;                     /* Zrušení vnějších okrajů nadpisu */
 }
 
